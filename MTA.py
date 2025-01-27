@@ -19,8 +19,8 @@ df['TotalCars'] = df['E_ZPass'] + df['VToll']
 # Convert the Date column to datetime format instead of the stupid thing they use
 df['Date'] = pd.to_datetime(df['Date'], format='%m/%d/%Y')
 
-# Filter data from 12/1/2024 to the latest available date in the dataset
-start_date = pd.to_datetime('2024-12-01')
+# Filter data from 12/1/2017 to the latest available date in the dataset
+start_date = pd.to_datetime('2017-12-01')
 end_date = df['Date'].max()
 filtered_df = df[(df['Date'] >= start_date) & (df['Date'] <= end_date)]
 
