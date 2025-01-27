@@ -11,14 +11,14 @@ df['Date'] = pd.to_datetime(df['Date'])
 df['Year'] = df['Date'].dt.year
 df['MonthDay'] = df['Date'].dt.strftime('%m-%d')
 
-# Filter data for the period Jan 1 to Jan 18 
-filtered_df = df[df['MonthDay'].between('01-01', '01-18')]
+# Filter data for the period Jan 1 to Jan 25
+filtered_df = df[df['MonthDay'].between('01-01', '01-25')]
 
 # Group by PlazaName and Year, then calculate the average TotalCars
 result = filtered_df.groupby(['PlazaName', 'Year'])['TotalCars'].mean().reset_index()
 
 # Save the output to a new CSV file
-output_file = 'Average_TotalCars_Jan1_Jan18.csv'
+output_file = 'Average_TotalCars_Jan1_Jan25.csv'
 result.to_csv(output_file, index=False)
 
 print(f"Processing complete. The results have been saved to {output_file}.")

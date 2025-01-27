@@ -26,16 +26,16 @@ filtered_df = df[(df['Date'] >= start_date) & (df['Date'] <= end_date)]
 
 # Used to show what plaza # is in English
 plaza_name_mapping = {
-    21: 'Catskill',
-    22: 'Selkirk',
-    23: 'Albany (I-787)',
-    24: 'Albany (I-87)',
-    25: 'Schenectady (I-890)',
-    26: 'Schenectady (I-890 & Rt 5s)',
-    27: 'Amsterdam',
-    28: 'Fulltonville',
-    29: 'Canajoharie',
-    30: 'Herkimer'
+    21: 'RFK Bridge Bronx Plaza and Queens Plaza',
+    22: 'RFK Bridge Manhattan Plaza',
+    23: 'Bronx-Whitestone Bridge',
+    24: 'Henry Hudson Bridge',
+    25: 'Marine Parkway-Gil Hodges Memorial Bridge',
+    26: 'Cross Bay Veterans Memorial Bridge',
+    27: 'Queens Midtown Tunnel',
+    28: 'Hugh L. Carey Tunnel',
+    29: 'Throgs Neck Bridge',
+    30: 'Verrazano-Narrows Bridge'
 }
 
 # Add the PlazaName column based on the Plaza column
